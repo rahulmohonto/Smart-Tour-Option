@@ -1,0 +1,17 @@
+.form{
+    margin:20px;
+    padding:10px;
+}
+.form input{
+    margin:.5rem;
+    text-align: center;
+}
+.google{
+    width:15.8rem;
+    border-radius:15px;
+    background-color:rgb(170, 144, 113);
+    margin-top:2rem;
+    padding:.8rem 1rem;
+    text-align:center;
+    margin-left:36rem;
+}

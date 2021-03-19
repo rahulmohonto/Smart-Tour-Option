@@ -1,0 +1,35 @@
+.card-holder{
+    position: relative;
+    border:1px solid thistle;
+    border-radius:10px;
+    padding:10px 10px;
+    background-color: cornflowerblue;
+    
+}
+.cardImage{
+    width:100%;
+    border-radius: 5px;
+    background-color: blanchedalmond;
+    margin-right: 10px;
+    padding:0 18px ;
+    
+}
+.button{
+    background-color:orange;
+    width:8rem;
+    padding:4px 0;
+    border-radius:8px;
+    text-align: center;
+    color:rgb(53, 5, 5);
+    font-size:1.3rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+.icon-style{
+    width:50%;
+    height:20px;
+}
+.card-container{
+    display:grid;
+    grid-template-columns: 500px 500px 500px;
+}
