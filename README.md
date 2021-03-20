@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Live site Link of this project is [Netlify Hosting](https://pensive-wilson-c09e6d.netlify.app/).
 
 ## This is the tours-selector-assignment react app
 
