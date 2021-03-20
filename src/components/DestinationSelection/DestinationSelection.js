@@ -11,7 +11,7 @@ import ShowTicket from '../ShowTicket/ShowTicket';
 const DestinationSelection = () => {
 
     const { fullname } = useParams();
-    const [optionDetail, setOptionDetail] = useState([])
+    const [optionDetail, setOptionDetail] = useState([true])
     const [componentshow, setComponentShow] = useState(false)
 
     useEffect(() => {
@@ -32,7 +32,7 @@ const DestinationSelection = () => {
 
 
         optionDetail.find(element => {
-            return element.fullname === fullname && setComponentShow(true)
+            return element.fullname === fullname && setComponentShow(true) && setOptionDetail(false)
 
 
         })
@@ -55,9 +55,9 @@ const DestinationSelection = () => {
                 <h3 className="text-center">{fullname}</h3>
 
                 <div className="text-center">
-                    <input type="text" className="place" name="search" required placeholder="start" /><br />
+                    <input type="text" className="place required" name="search" required placeholder="start" /><br />
 
-                    <input type="text" className="place" name="search" placeholder="End" required /><br />
+                    <input type="text" className="place required" name="search" placeholder="End" required /><br />
                     <button onClick={() => handlePlaceSearch()} className="btn btn-primary text-center mt-3">Search</button>
                     {componentshow && <ShowTicket></ShowTicket>
                     }

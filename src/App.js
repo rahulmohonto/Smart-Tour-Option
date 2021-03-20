@@ -12,6 +12,7 @@ import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import DestinationSelection from './components/DestinationSelection/DestinationSelection';
 import SetMap from './components/Map/SetMap';
 import Blog from './components/Blog/Blog';
+import ShowDestination from './components/ShowDestination/ShowDestination';
 
 
 
@@ -38,6 +39,9 @@ function App() {
           <PrivateRoute path="/destination/:fullname">
             <DestinationSelection />
             <SetMap />
+          </PrivateRoute>
+          <PrivateRoute path="/destination">
+            <ShowDestination></ShowDestination>
           </PrivateRoute>
 
           <Route exact path="/">
