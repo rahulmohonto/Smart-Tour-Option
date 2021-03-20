@@ -11,6 +11,7 @@ import Login from './components/Login/Login';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import DestinationSelection from './components/DestinationSelection/DestinationSelection';
 import SetMap from './components/Map/SetMap';
+import Blog from './components/Blog/Blog';
 
 
 
@@ -28,6 +29,9 @@ function App() {
           <Route path="/home">
             <Home />
           </Route>
+          <Route path="/blog">
+            <Blog />
+          </Route>
           <Route path="/login">
             <Login />
           </Route>
@@ -35,6 +39,7 @@ function App() {
             <DestinationSelection />
             <SetMap />
           </PrivateRoute>
+
           <Route exact path="/">
             <Home />
           </Route>

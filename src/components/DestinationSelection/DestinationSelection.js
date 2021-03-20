@@ -18,15 +18,15 @@ const DestinationSelection = () => {
         setOptionDetail(TourData)
         console.log(optionDetail)
 
-    }, [fullname])
+    }, [optionDetail])
 
-    const [ticket1, ticket2, ticket3] = optionDetail
+    // const [ticket1, ticket2, ticket3] = optionDetail
     const history = useHistory();
     console.log(history)
     // console.log(optionDetail)
 
     const [ticket] = optionDetail
-    // console.log(ticket)
+    console.log(ticket)
 
     const handlePlaceSearch = () => {
         console.log(optionDetail);

@@ -9,7 +9,7 @@ const Home = () => {
     useEffect(() => {
         setTours(TourData)
         console.log(tours)
-    }, [])
+    }, [tours])
 
     return (
         <div className="row main">
