@@ -49,6 +49,9 @@ function App() {
           </Route>
         </Switch>
       </Router>
+      <div>
+        <footer className="text-center text-primary"> <small>&copy; Copyright {(new Date()).toLocaleString()}, All Rights Reserved</small> </footer>
+      </div>
     </UserContext.Provider>
   );
 
