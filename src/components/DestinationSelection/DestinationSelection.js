@@ -29,13 +29,14 @@ const DestinationSelection = () => {
     console.log(ticket)
 
     const handlePlaceSearch = () => {
-        console.log(optionDetail);
-        optionDetail.find(element => {
-            element.fullname === fullname && setComponentShow(true)
 
-            console.log(element)
+
+        optionDetail.find(element => {
+            return element.fullname === fullname && setComponentShow(true)
+
 
         })
+
 
     }
 
