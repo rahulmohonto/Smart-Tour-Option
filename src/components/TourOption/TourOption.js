@@ -1,15 +1,15 @@
 import './TourOption.css';
-import React, { createContext, useState } from 'react';
-import { Card, Button } from 'react-bootstrap';
-import { UserContext } from '../../App';
+import React from 'react';
+import { Card } from 'react-bootstrap';
+// import { UserContext } from '../../App';
 import { useHistory } from 'react-router';
 // export const TourContext = createContext()
 const TourOption = (props) => {
     // const [tours, setTours] = useContext(UserContext);
-    const { fullname, email, image, id } = props.tour;
+    const { fullname, image } = props.tour;
     const history = useHistory();
     const handleOptionClick = (fullname) => {
-        // history.push('/destination') &&
+        // history.push(`/destination`) &&
         history.push(`/destination/${fullname}`)
 
     }

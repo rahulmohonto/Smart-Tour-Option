@@ -2,4 +2,8 @@
     background-color: darkcyan;
     width:20%;
     text-align: center;
+    margin:3rem;
+}
+.form-map-holder{
+    margin:2rem;
 }

@@ -1,29 +1,43 @@
-[{
+[
+  {
     "id": 1,
     "fullname": "Motorcycle",
     "email": "akershaw0@businessinsider.com",
     "image":"https://www.geico.com/living/wp-content/uploads/GEICOMore_MotorcycleMaintenance_RF_406223_600x400.jpg",
-    "money": "$8.80",
-    "city": "Klerksdorp"
+    "ticket1": "$68.80",
+    "ticket2": "$68.80",
+    "ticket3": "$68.80",
+    "city": "Klerksdorp",
+    "ticketImage":"https://i.pinimg.com/736x/5f/2f/ec/5f2fec6c4dd605d9c18b2ef0d8046ebb.jpg"
   }, {
     "id": 2,
     "fullname": "Car",
     "email": "mzambon1@barnesandnoble.com",
     "image":"https://ichef.bbci.co.uk/news/976/cpsprodpb/10887/production/_116391776_429a25de-d354-4272-9dae-eed185151bab.jpg",
-    "money": "$9.90",
-    "city": "Wuning"
+    "ticket1": "$68.80",
+    "ticket2": "$68.80",
+    "ticket3": "$68.80",
+    "city": "Wuning",
+    "ticketImage":"https://i.pinimg.com/736x/5f/2f/ec/5f2fec6c4dd605d9c18b2ef0d8046ebb.jpg"
   }, {
     "id": 3,
     "fullname": "Bus",
     "email": "jlongfield2@wp.com",
     "image":"https://assetsw.bus.com/content/uploads/2020/02/14170850/Charter-Bus-Rentals-Photo.jpg",
-    "money": "$8.97",
-    "city": "Nao"
+    "ticket1": "$68.80",
+    "ticket2": "$68.80",
+    "ticket3": "$68.80",
+    "city": "Nao",
+    "ticketImage":"https://i.pinimg.com/736x/5f/2f/ec/5f2fec6c4dd605d9c18b2ef0d8046ebb.jpg"
   }, {
     "id": 4,
     "fullname": "Train",
     "email": "adomke3@sbwire.com",
     "image":"https://www.ft.com/__origami/service/image/v2/images/raw/https%3A%2F%2Fs3-ap-northeast-1.amazonaws.com%2Fpsh-ex-ftnikkei-3937bb4%2Fimages%2F7%2F5%2F0%2F1%2F20801057-3-eng-GB%2FCropped-1558037875_____________________________________________20190517042636_data.jpg?source=nar-cms&width=1600&height=900&fit=cover&gravity=faces",
-    "money": "$8.26",
-    "city": "Yasnyy"
-  }]
+    "ticket1": "$68.80",
+    "ticket2": "$68.80",
+    "ticket3": "$68.80",
+    "city": "Yasnyy",
+    "ticketImage":"https://i.pinimg.com/736x/5f/2f/ec/5f2fec6c4dd605d9c18b2ef0d8046ebb.jpg"
+  }
+]

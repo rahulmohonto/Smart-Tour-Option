@@ -10,12 +10,14 @@ import Header from './components/Header/Header';
 import Login from './components/Login/Login';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import DestinationSelection from './components/DestinationSelection/DestinationSelection';
+import SetMap from './components/Map/SetMap';
+
 
 
 export const UserContext = createContext();
 
 function App() {
-  const [tours, setTours] = useState([])
+
   const [loginInfo, setLoginInfo] = useState([])
 
   return (
@@ -24,13 +26,14 @@ function App() {
         <Header />
         <Switch>
           <Route path="/home">
-            <Home tours={tours} setTours={setTours} />
+            <Home />
           </Route>
           <Route path="/login">
             <Login />
           </Route>
           <PrivateRoute path="/destination/:fullname">
-            <DestinationSelection tours={tours} />
+            <DestinationSelection />
+            <SetMap />
           </PrivateRoute>
           <Route exact path="/">
             <Home />

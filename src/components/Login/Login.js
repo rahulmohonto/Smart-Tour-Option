@@ -31,6 +31,7 @@ const Login = () => {
     })
 
     const [loginInfo, setLoginInfo] = useContext(UserContext)
+    console.log(loginInfo)
     const history = useHistory();
     const location = useLocation();
     let { from } = location.state || { from: { pathname: "/" } };
@@ -147,13 +148,13 @@ const Login = () => {
 
                 <input type="text" name="email" onBlur={handleChange} placeholder="email" required /><br />
                 <input type="password" name="new-password" onBlur={handleChange} placeholder="password" required /><br />
-                <input type="password" name="password" onBlur={handleChange} placeholder="Confirm Password" required /><br />
+                <input type="password" name="password" onBlur={handleChange} placeholder="Confirm Password" /><br />
                 <input type="submit" value={newUser ? 'Create An Acount' : 'Sign-In'} /><br />
                 <div className="google" onClick={handleSignIn}>Sign In Using Google </div><br />
 
 
 
-                Already Have An Acount <span className="link">Log In</span>
+                Already Have An Acount <button onClick={handleSignIn} onSubmit={handleSubmit} className="link">Log In</button>
 
             </form>
             <p style={{ color: 'red' }}>{user.error}</p>

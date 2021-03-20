@@ -1,11 +1,11 @@
-import React, { useContext, useEffect, useState } from 'react';
-import { UserContext } from '../../App';
+import React, { useEffect, useState } from 'react';
 import TourData from '../../FakeData/Data.json'
 import TourOption from '../TourOption/TourOption';
 import './Home.css'
-const Home = (props) => {
-    // const TourContext = createContext()
-    const { tours, setTours } = props
+const Home = () => {
+    // console.log(props)
+    const [tours, setTours] = useState([])
+    // const { tours, setTours } = props
     useEffect(() => {
         setTours(TourData)
         console.log(tours)
@@ -15,7 +15,7 @@ const Home = (props) => {
         <div className="row main">
 
             {
-                tours.map(tour => <TourOption tour={tour}></TourOption>)
+                tours.map(tour => <TourOption key={tours.fullname} tour={tour}></TourOption>)
             }
         </div>
     );

@@ -4,12 +4,12 @@ import { useContext } from 'react';
 import { UserContext } from '../../App';
 
 const PrivateRoute = ({ children, ...rest }) => {
-    const [loginInfo, setLoginInfo] = useContext(UserContext)
+    const [loginInfo] = useContext(UserContext)
     return (
         <Route
             {...rest}
             render={({ location }) =>
-                loginInfo.email ? (
+                loginInfo.email || loginInfo.name ? (
                     children
                 ) : (
                     <Redirect

@@ -1,0 +1,11 @@
+.ticket-image{
+    width:80px;
+}
+.ticket-holder{
+    background-color:coral;
+    border-radius:10px;
+    width:50%;
+    padding:10px;
+    text-align:center;
+    margin-left: 25%;
+}
